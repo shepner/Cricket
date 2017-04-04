@@ -1,7 +1,7 @@
 # Cricket
-updated electronic cricket idea
+Updated electronic cricket idea
 
-
+Back in the late 70s or possibly early 80s, I remember seeing an article in a magazine for a fun little electronics kit for an electronic cricket.  It ran off a 9v battery, had wire legs and probably had a 555 or the like for chirping every so often.  Now that embedded CPUs likely have more computing power then the actual cricket, I think it is time to have one with a bit more functionality.
 
 Sensors:
 * light sensors (eyes)
