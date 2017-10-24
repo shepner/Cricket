@@ -16,3 +16,6 @@ Touch
 Vision
 * $8 [Adafruit APDS9960 Proximity, Light, RGB, and Gesture Sensor](https://www.adafruit.com/product/3595)
 
+Power
+* $20 [PowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost @ 1A - 1000C](https://www.adafruit.com/product/2465)
+* $15 [Lithium Ion Polymer Battery - 3.7v 2500mAh](https://www.adafruit.com/product/328)
