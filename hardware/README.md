@@ -19,3 +19,7 @@ Vision
 Power
 * $20 [PowerBoost 1000 Charger - Rechargeable 5V Lipo USB Boost @ 1A - 1000C](https://www.adafruit.com/product/2465)
 * $15 [Lithium Ion Polymer Battery - 3.7v 2500mAh](https://www.adafruit.com/product/328)
+
+---
+
+[I2S howto on the Raspberry Pi](https://github.com/nejohnson2/rpi-i2s) gives a good writeup for how to do this as well as provides a GPIO breakout: <img src="rpi-pins.png" align="right" width="334" height="446">
