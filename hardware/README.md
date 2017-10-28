@@ -22,4 +22,4 @@ Power
 
 ---
 
-[I2S howto on the Raspberry Pi](https://github.com/nejohnson2/rpi-i2s) gives a good writeup for how to do this as well as provides a very comprehensive RPi GPIO breakout which came from [pinout.xyz](https://pinout.xyz/pinout/pcm): <img src="https://github.com/nejohnson2/rpi-i2s/blob/master/rpi-pins.png" align="right" width="334" height="446">
+[I2S howto on the Raspberry Pi](https://github.com/nejohnson2/rpi-i2s) gives a good writeup for how to do this as well as provides a very comprehensive RPi GPIO breakout highlighting the PCM pins.  This came from [pinout.xyz](https://pinout.xyz/pinout/pcm) which is a very good resource: <img src="https://github.com/nejohnson2/rpi-i2s/blob/master/rpi-pins.png" align="right" width="334" height="446">
