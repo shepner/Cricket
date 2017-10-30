@@ -26,3 +26,7 @@ Power
 
 Here is the general GIO header
 <img src="https://pinout.xyz/resources/raspberry-pi-pinout.png">
+
+---
+
+[Eagle PCB CAD software](https://www.autodesk.com/products/eagle)
