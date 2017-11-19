@@ -26,29 +26,36 @@ Power
 
 Here is a Raspberry Pi GIO pinout from [pinout.xyz](https://pinout.xyz/pinout/pcm) highlighting the PCM (I2S??) pins: <img src="https://github.com/shepner/Cricket/blob/master/hardware/RPi_PCM.png?raw=true" align="right" width="300" height="400">
 
-Wiring for [Adafruit I2S MEMS Microphone Breakout - SPH0645LM4H](https://www.adafruit.com/product/3421)
-|Mic   | Raspberry Pi Zero W
-|---   |---
-| 3v   | RPi pin 1  (3.3v Power)
-| GND  | RPi pin 6  (Ground)
-| BCLK | RPi pin 12 (BCM 18 (CLK))
-| DOUT | RPi pin 38 (BCM 20 (DIN))
-| LRCL | RPi pin 35 (BCM 19 (FS))
-| SEL  | RPi pin 9  (Ground)
+<table>
+  <tr>
+    <td><b><a href="https://www.adafruit.com/product/3421">SPH0645LM4H Breakout</a></b></td>
+    <td><b><a href="https://pinout.xyz/pinout/pcm">Raspberry Pi Zero W</a></b></td>
+  </tr>
+  <tr> <td>3v</td>   <td>RPi pin 1 (3.3v Power)</td>    </tr>
+  <tr> <td>GND</td>  <td>RPi pin 6 (Ground)</td>        </tr>
+  <tr> <td>BCLK</td> <td>RPi pin 12 (BCM 18 (CLK))</td> </tr>
+  <tr> <td>DOUT</td> <td>RPi pin 38 (BCM 20 (DIN))</td> </tr>
+  <tr> <td>LRCL</td> <td>RPi pin 35 (BCM 19 (FS))</td>  </tr>
+  <tr> <td>SEL</td>  <td>RPi pin 9 (Ground)</td>        </tr>
+</table>
 
 The documentation can be found [here](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/) with information about how to wire 2 of them together [here](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-and-test)
 
-
-Wiring for [Adafruit I2S 3W Class D Amplifier Breakout - MAX98357A](https://www.adafruit.com/product/3006)
-* VIN  -> RPi pin 2  (5v Power)
-* GND  -> RPi pin 20 (Ground)
-* SD   -> RPi pin NA
-* GAIN -> RPi pin NA
-* DIN  -> RPi pin 40 (BCM 21 (DOUT))
-* BCLK -> RPi pin 12 (BCM 18 (CLK))
-* LRC  -> RPi pin 35 (BCM 19 (FS))
-* \+    -> SPEAKER RED
-* \-    -> SPEAKER BLACK
+<table>
+  <tr>
+    <td><b><a href="https://www.adafruit.com/product/3006">MAX98357A Breakout</a></b></td>
+    <td><b><a href="https://pinout.xyz/pinout/pcm">Raspberry Pi Zero W</a></b></td>
+  </tr>
+  <tr> <td>VIN</td>  <td>RPi pin 2  (5v Power)</td>      </tr>
+  <tr> <td>GND</td>  <td>RPi pin 20 (Ground)</td>        </tr>
+  <tr> <td>SD</td>   <td>RPi pin NA</td>                 </tr>
+  <tr> <td>GAIN</td> <td>RPi pin NA</td>                 </tr>
+  <tr> <td>DIN</td>  <td>RPi pin 40 (BCM 21 (DOUT))</td> </tr>
+  <tr> <td>BCLK</td> <td>RPi pin 12 (BCM 18 (CLK))</td>  </tr>
+  <tr> <td>LRC</td>  <td>RPi pin 35 (BCM 19 (FS))</td>   </tr>
+  <tr> <td>+</td>    <td>SPEAKER RED</td>                </tr>
+  <tr> <td>-</td>    <td>SPEAKER BLACK</td>              </tr>
+</table>
 
 The documentation can be found [here](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/downloads)
 
