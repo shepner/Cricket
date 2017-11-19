@@ -52,12 +52,8 @@ The documentation can be found [here](https://learn.adafruit.com/adafruit-max983
 
 Note that running this from 5v will signal to output in "stereo" due to the 1Mohm resistor rom SD to Vin.  That is, both L and R channel signals will be sent through the single output.
 
-
 ---
 
-Here is the general GIO header
-<img src="https://pinout.xyz/resources/raspberry-pi-pinout.png">
-
----
+Todo:
 
 [Eagle PCB CAD software](https://www.autodesk.com/products/eagle)
