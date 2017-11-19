@@ -22,7 +22,31 @@ Power
 
 ---
 
-[I2S howto on the Raspberry Pi](https://github.com/nejohnson2/rpi-i2s) gives a good writeup for how to do this as well as provides a very comprehensive RPi GPIO breakout highlighting the PCM (PCM == I2S??) pins.  This came from [pinout.xyz](https://pinout.xyz/pinout/pcm) which is a very good resource: <img src="https://github.com/nejohnson2/rpi-i2s/blob/master/rpi-pins.png" align="right" width="334" height="446">
+[I2S howto on the Raspberry Pi](https://github.com/nejohnson2/rpi-i2s) gives a good writeup for how to do this.
+
+Here is a Raspberry Pi GIO pinout from [pinout.xyz](https://pinout.xyz/pinout/pcm) highlighting the PCM (I2S??) pins: <img src="https://github.com/nejohnson2/rpi-i2s/blob/master/rpi-pins.png" align="right" width="300" height="400">
+
+Wiring for [Adafruit I2S MEMS Microphone Breakout - SPH0645LM4H](https://www.adafruit.com/product/3421)
+* 3v   -> RPi pin 1  (3.3v Power)
+* GND  -> RPi pin 6  (Ground)
+* BCLK -> RPi pin 12 (BCM 18 (CLK))
+* DOUT -> RPi pin 
+* LRCL -> RPi pin 
+* SEL  -> RPi pin 
+
+Wiring for [Adafruit I2S 3W Class D Amplifier Breakout - MAX98357A](https://www.adafruit.com/product/3006)
+* VIN  -> RPi pin 17 (3.3v Power)
+* GND  -> RPi pin 20 (Ground)
+* SD   -> RPi pin 
+* GAIN -> RPi pin 
+* DIN  -> RPi pin 
+* BCLK -> RPi pin 
+* LRC  -> RPi pin 
+* +    -> SPEAKER RED
+* -    -> SPEAKER BLACK
+
+
+---
 
 Here is the general GIO header
 <img src="https://pinout.xyz/resources/raspberry-pi-pinout.png">
