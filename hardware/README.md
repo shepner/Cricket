@@ -30,20 +30,27 @@ Wiring for [Adafruit I2S MEMS Microphone Breakout - SPH0645LM4H](https://www.ada
 * 3v   -> RPi pin 1  (3.3v Power)
 * GND  -> RPi pin 6  (Ground)
 * BCLK -> RPi pin 12 (BCM 18 (CLK))
-* DOUT -> RPi pin 
-* LRCL -> RPi pin 
-* SEL  -> RPi pin 
+* DOUT -> RPi pin 38 (BCM 20 (DIN))
+* LRCL -> RPi pin 35 (BCM 19 (FS))
+* SEL  -> RPi pin 9  (Ground)
+
+The documentation can be found [here](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/) with information about how to wire 2 of them together [here](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-and-test)
+
 
 Wiring for [Adafruit I2S 3W Class D Amplifier Breakout - MAX98357A](https://www.adafruit.com/product/3006)
-* VIN  -> RPi pin 17 (3.3v Power)
+* VIN  -> RPi pin 2  (5v Power)
 * GND  -> RPi pin 20 (Ground)
-* SD   -> RPi pin 
-* GAIN -> RPi pin 
-* DIN  -> RPi pin 
-* BCLK -> RPi pin 
-* LRC  -> RPi pin 
-* +    -> SPEAKER RED
-* -    -> SPEAKER BLACK
+* SD   -> RPi pin NA
+* GAIN -> RPi pin NA
+* DIN  -> RPi pin 40 (BCM 21 (DOUT))
+* BCLK -> RPi pin 12 (BCM 18 (CLK))
+* LRC  -> RPi pin 35 (BCM 19 (FS))
+* \+    -> SPEAKER RED
+* \-    -> SPEAKER BLACK
+
+The documentation can be found [here](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/downloads)
+
+Note that running this from 5v will signal to output in "stereo" due to the 1Mohm resistor rom SD to Vin.  That is, both L and R channel signals will be sent through the single output.
 
 
 ---
