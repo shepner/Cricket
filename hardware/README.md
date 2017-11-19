@@ -24,7 +24,7 @@ Power
 
 [I2S howto on the Raspberry Pi](https://github.com/nejohnson2/rpi-i2s) gives a good writeup for how to do this.
 
-Here is a Raspberry Pi GIO pinout from [pinout.xyz](https://pinout.xyz/pinout/pcm) highlighting the PCM (I2S??) pins: <img src="https://github.com/nejohnson2/rpi-i2s/blob/master/rpi-pins.png" align="right" width="300" height="400">
+Here is a Raspberry Pi GIO pinout from [pinout.xyz](https://pinout.xyz/pinout/pcm) highlighting the PCM (I2S??) pins: <img src="https://github.com/shepner/Cricket/blob/master/hardware/RPi_PCM.png?raw=true" align="right" width="300" height="400">
 
 Wiring for [Adafruit I2S MEMS Microphone Breakout - SPH0645LM4H](https://www.adafruit.com/product/3421)
 * 3v   -> RPi pin 1  (3.3v Power)
