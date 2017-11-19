@@ -27,12 +27,14 @@ Power
 Here is a Raspberry Pi GIO pinout from [pinout.xyz](https://pinout.xyz/pinout/pcm) highlighting the PCM (I2S??) pins: <img src="https://github.com/shepner/Cricket/blob/master/hardware/RPi_PCM.png?raw=true" align="right" width="300" height="400">
 
 Wiring for [Adafruit I2S MEMS Microphone Breakout - SPH0645LM4H](https://www.adafruit.com/product/3421)
-* 3v   -> RPi pin 1  (3.3v Power)
-* GND  -> RPi pin 6  (Ground)
-* BCLK -> RPi pin 12 (BCM 18 (CLK))
-* DOUT -> RPi pin 38 (BCM 20 (DIN))
-* LRCL -> RPi pin 35 (BCM 19 (FS))
-* SEL  -> RPi pin 9  (Ground)
+|Mic   | Raspberry Pi Zero W
+|---   |---
+| 3v   | RPi pin 1  (3.3v Power)
+| GND  | RPi pin 6  (Ground)
+| BCLK | RPi pin 12 (BCM 18 (CLK))
+| DOUT | RPi pin 38 (BCM 20 (DIN))
+| LRCL | RPi pin 35 (BCM 19 (FS))
+| SEL  | RPi pin 9  (Ground)
 
 The documentation can be found [here](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/) with information about how to wire 2 of them together [here](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout/raspberry-pi-wiring-and-test)
 
