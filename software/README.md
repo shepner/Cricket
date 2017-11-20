@@ -6,16 +6,18 @@ login U/P:  pi/raspberry
 
 ---
 
-[attach to WiFi](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):
+[Attach to WiFi](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):
 
-`wpa_passphrase "testing" "testingPassword" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf > /dev/null`
+`wpa_passphrase "MySSID" "SomePasswordForTheSSID" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf > /dev/null`
 
 
-[enable sshd](https://www.raspberrypi.org/documentation/remote-access/ssh/):
+[Enable sshd](https://www.raspberrypi.org/documentation/remote-access/ssh/):
 ```shell
 sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
+
+Now `sudo reboot` and make sure it connects to WiFi.  You make want to login to the console and run `ifconfig -a` to find out what IP address was assigned
 
 ---
 
