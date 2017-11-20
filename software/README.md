@@ -2,7 +2,7 @@ make sure everything is wired up as outlined in the hardware section
 
 Flash a micro SD with [RASPBIAN STRETCH LITE](https://www.raspberrypi.org/downloads/raspbian/) using [Etcher](https://etcher.io/)
 
-login U/P:  pi/raspberry
+Default login U/P:  pi/raspberry
 
 ---
 
