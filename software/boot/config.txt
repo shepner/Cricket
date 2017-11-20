@@ -3,7 +3,7 @@
 # Some settings may impact device functionality. See link above for details
 
 # uncomment if you get no picture on HDMI for a default "safe" mode
-#hdmi_safe=1
+hdmi_safe=1  #trying this just in case it helps
 
 # uncomment this if your display has a black border of unused pixels visible
 # and your display can output without overscan
@@ -40,7 +40,7 @@ hdmi_cvt=1024 600 60 3 0 0 0
 
 # uncomment to increase signal to HDMI, if you have interference, blanking, or
 # no display
-#config_hdmi_boost=4
+config_hdmi_boost=4  #also trying this just in case it helps
 
 # uncomment for composite PAL
 #sdtv_mode=2
