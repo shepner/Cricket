@@ -7,7 +7,9 @@ login U/P:  pi/raspberry
 ---
 
 [attach to WiFi](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):
+
 `wpa_passphrase "testing" "testingPassword" | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf > /dev/null`
+
 
 [enable sshd](https://www.raspberrypi.org/documentation/remote-access/ssh/):
 ```shell
