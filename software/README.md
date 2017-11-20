@@ -51,10 +51,62 @@ sudo chmod +x /usr/bin/rpi-source
 rpi-source --skip-gcc
 ```
 
+===
+continue testing from here
+===
+
 
 Prepare to Compile the i2s module
 
+Compile I2S support: `sudo mount -t debugfs debugs /sys/kernel/debug`
 
+'sudo cat /sys/kernel/debug/asoc/platforms'
+
+NOTE: If you are using Pi Zero - the module name is 20203000.i2s
+
+Download the module, written by [Paul Creaser](https://github.com/PaulCreaser/rpi-i2s-audio)
+```shell
+git clone https://github.com/PaulCreaser/rpi-i2s-audio
+cd rpi-i2s-audio
+vi my_loader.c
+```
+
+NOTE:  If using the Raspberry Pi Zero, look for the following lines:
+```
+.platform = "3f203000.i2s",
+.name = "3f203000.i2s",
+```
+and change them to:
+```
+platform = "20203000.i2s",
+.name = "20203000.i2s",
+```
+
+Compile the module
+```
+make -C /lib/modules/$(uname -r )/build M=$(pwd) modules
+sudo insmod my_loader.ko
+```
+
+Verify it loaded
+``` shell
+lsmod | grep my_loader
+dmesg | tail
+```
+Note that on the Pi 2/3 you'll see `asoc-simple-card asoc-simple-card.0: snd-soc-dummy-dai <-> 3F203000.i2s mapping ok` on the last line and on Pi Zero you'll see `asoc-simple-card asoc-simple-card.0: snd-soc-dummy-dai <-> 20203000.i2s mapping ok`
+
+set the module to automatically load upon boot
+``` shell
+sudo cp my_loader.ko /lib/modules/$(uname -r)
+echo 'my_loader' | sudo tee --append /etc/modules > /dev/null
+sudo depmod -a
+sudo modprobe my_loader
+```
+
+And then `sudo reboot`
+
+---
+===
 ---
 
 install software for I2S following these instructions: [rpi-i2s](https://github.com/nejohnson2/rpi-i2s)
