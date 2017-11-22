@@ -52,7 +52,9 @@ rpi-source --skip-gcc
 ```
 
 ===
+
 continue testing from here
+
 ===
 
 
@@ -105,8 +107,13 @@ sudo modprobe my_loader
 
 And then `sudo reboot`
 
+
+
+
 ---
+
 ===
+
 ---
 
 install software for I2S following these instructions: [rpi-i2s](https://github.com/nejohnson2/rpi-i2s)
