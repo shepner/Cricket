@@ -51,11 +51,11 @@ sudo chmod +x /usr/bin/rpi-source
 rpi-source --skip-gcc
 ```
 
-===
+---
 
 continue testing from here
 
-===
+---
 
 
 Prepare to Compile the i2s module
