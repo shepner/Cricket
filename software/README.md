@@ -2,6 +2,8 @@ make sure everything is wired up as outlined in the hardware section
 
 Flash a micro SD with [RASPBIAN STRETCH LITE](https://www.raspberrypi.org/downloads/raspbian/) using [Etcher](https://etcher.io/)
 
+Attach an HDMI monitor.  Attach a keyboard to the USB port.  Attach power to the PWR port (its the one closer to the end of the board)
+
 Default login U/P:  pi/raspberry
 
 ---
@@ -18,6 +20,8 @@ sudo systemctl start ssh
 ```
 
 Now `sudo reboot` and make sure it connects to WiFi.  You make want to login to the console and run `ifconfig -a` to find out what IP address was assigned
+
+You *should* be done with the keyboard and monitor at this point.  Make sure you can login (ie `ssh pi@<ip address>`) before disconnect them.
 
 ---
 
