@@ -36,3 +36,5 @@ cricket (annoyatron) mode:
 * with a network of crickets, lure danger away
  
 
+[Chirp](https://chirp.io/) is closely related to this:
+https://create.arduino.cc/projecthub/ChirpDevs/send-data-with-sound-bf7024
